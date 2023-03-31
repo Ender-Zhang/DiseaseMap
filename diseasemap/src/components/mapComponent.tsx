@@ -10,6 +10,8 @@ import {
 
 import allStates from "../assets/data/allstates.json";
 
+import { Link, redirect } from "react-router-dom";
+
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
 const offsets = {
@@ -32,10 +34,12 @@ const MapChart = () => {
       };
   return (
     <ComposableMap projection="geoAlbersUsa" onClick={handleMapClick}>
+
       <Geographies geography={geoUrl} >
         {({ geographies }) => (
           <>
             {geographies.map(geo => (
+              // <Link to={"/detail/${geo.id}"}>
               <Geography
                 key={geo.rsmKey}
                 stroke="#FFF"
@@ -45,9 +49,13 @@ const MapChart = () => {
                 // 这里是点击事件 添加每个州的详细信息
                 // onClick={handleMapClick}
                 onClick={(event) => {
-                    event.stopPropagation();
-                    alert(geo.id);}}
+                    // event.stopPropagation();
+                    alert(geo.id);
+                    // redirect(`/test/${geo.id}`);
+                    redirect("/test");
+                  }}
               />
+              // {/* </Link> */}
             ))}
             {geographies.map(geo => {
               const centroid = geoCentroid(geo);
