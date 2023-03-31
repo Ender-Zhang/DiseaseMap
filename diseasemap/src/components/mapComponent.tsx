@@ -39,7 +39,7 @@ const MapChart = () => {
         {({ geographies }) => (
           <>
             {geographies.map(geo => (
-              // <Link to={"/detail/${geo.id}"}>
+              <Link to={"/detail/"+geo.id} key={geo.rsmKey}>
               <Geography
                 key={geo.rsmKey}
                 stroke="#FFF"
@@ -50,12 +50,13 @@ const MapChart = () => {
                 // onClick={handleMapClick}
                 onClick={(event) => {
                     // event.stopPropagation();
-                    alert(geo.id);
-                    // redirect(`/test/${geo.id}`);
-                    redirect("/test");
+                    // alert(geo.id);
+                    // redirect(`/detail/${geo.id}`);
+                    console.log(`/detail/${geo.id}`);
+                    // redirect("/test");
                   }}
               />
-              // {/* </Link> */}
+              </Link>
             ))}
             {geographies.map(geo => {
               const centroid = geoCentroid(geo);
