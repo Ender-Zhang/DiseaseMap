@@ -73,40 +73,15 @@ const MapChart = () => {
                     
                     console.log(fillColors);
 
-                    // setGeographyStates({
-                    //   ...geographyStates,
-                    //   [geo.id]: {
-                    //     ...geographyStates[geo.id],
-                    //     isHovered: true,
-                    //     fill: "#552"
-                    //   }
-                    // });
                   }}
-                  onMouseLeave={() => {
-                    console.log("leave: " + geo.id);
-                    setHoveredId(null);
-                    // setFillColors({ ...fillColors, [geo.id]: "#DDD" });
-                    // setFillColors({ ...fillColors, [geo.id]: undefined });
-                    // const newFillColors:any = Object.assign({}, fillColors);
-                    // delete newFillColors[geo.id];  // 删除目标地理区域的 fill 颜色
-                    // setFillColors(newFillColors);
-                      // setFillColors({});
-
-
-                      // setGeographyStates({
-                      //   ...geographyStates,
-                      //   [geo.id]: {
-                      //     ...geographyStates[geo.id],
-                      //     isHovered: false,
-                      //     fill: undefined
-                      //   }
-                      // });
-
-                  }}
+                  // onMouseLeave={() => {
+                  //   console.log("leave: " + geo.id);
+                  //   setHoveredId(null);
+                  // }}
               />
               </Link>
             ))}
-            {/* {geographies.map(geo => {
+            {geographies.map(geo => {
               const centroid = geoCentroid(geo);
               const cur = allStates.find(s => s.val === geo.id);
               return (
@@ -134,7 +109,7 @@ const MapChart = () => {
                     ))}
                 </g>
               );
-            })} */}
+            })}
           </>
         )}
       </Geographies>
