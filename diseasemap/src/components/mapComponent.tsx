@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { geoCentroid } from "d3-geo";
 import {
   ComposableMap,
@@ -32,9 +32,16 @@ const MapChart = () => {
         event.stopPropagation();
         // alert("geo.id")
       };
+      const [hoveredId, setHoveredId] = useState(null);
+      const [fillColors, setFillColors] = useState({});
+      const [geographyStates, setGeographyStates] = useState({});
   return (
     <ComposableMap projection="geoAlbersUsa" onClick={handleMapClick}>
-
+        {/* {hoveredId && (
+          <div >
+            {hoveredId}
+          </div>
+        )} */}
       <Geographies geography={geoUrl} >
         {({ geographies }) => (
           <>
@@ -44,21 +51,62 @@ const MapChart = () => {
                 key={geo.rsmKey}
                 stroke="#FFF"
                 geography={geo}
-                fill="#DDD"
+                // fill="#DDD"
+                fill={fillColors[geo.id] || "#DDD"}
+                // fill={geographyStates[geo.id]?.isHovered ? "#552" : "#DDD"}
+                // fill = {geo.id == 1 ? "#000" : "#DDD"}
 
                 // 这里是点击事件 添加每个州的详细信息
                 // onClick={handleMapClick}
                 onClick={(event) => {
-                    // event.stopPropagation();
-                    // alert(geo.id);
-                    // redirect(`/detail/${geo.id}`);
                     console.log(`/detail/${geo.id}`);
-                    // redirect("/test");
+                    // console.log(geo.name);
+                  }}
+
+                  onMouseEnter={() => {
+                    setHoveredId(geo.id);
+                    console.log("hover: " + geo.id);
+                    
+
+                    setFillColors({[geo.id]: "#555" });
+                    // setFillColors({ ...fillColors, [geo.id]: "#555" });
+                    
+                    console.log(fillColors);
+
+                    // setGeographyStates({
+                    //   ...geographyStates,
+                    //   [geo.id]: {
+                    //     ...geographyStates[geo.id],
+                    //     isHovered: true,
+                    //     fill: "#552"
+                    //   }
+                    // });
+                  }}
+                  onMouseLeave={() => {
+                    console.log("leave: " + geo.id);
+                    setHoveredId(null);
+                    // setFillColors({ ...fillColors, [geo.id]: "#DDD" });
+                    // setFillColors({ ...fillColors, [geo.id]: undefined });
+                    // const newFillColors:any = Object.assign({}, fillColors);
+                    // delete newFillColors[geo.id];  // 删除目标地理区域的 fill 颜色
+                    // setFillColors(newFillColors);
+                      // setFillColors({});
+
+
+                      // setGeographyStates({
+                      //   ...geographyStates,
+                      //   [geo.id]: {
+                      //     ...geographyStates[geo.id],
+                      //     isHovered: false,
+                      //     fill: undefined
+                      //   }
+                      // });
+
                   }}
               />
               </Link>
             ))}
-            {geographies.map(geo => {
+            {/* {geographies.map(geo => {
               const centroid = geoCentroid(geo);
               const cur = allStates.find(s => s.val === geo.id);
               return (
@@ -86,7 +134,7 @@ const MapChart = () => {
                     ))}
                 </g>
               );
-            })}
+            })} */}
           </>
         )}
       </Geographies>
