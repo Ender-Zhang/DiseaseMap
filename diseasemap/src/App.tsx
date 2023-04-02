@@ -6,7 +6,6 @@ import Test from "./routes/test";
 import Login from "./routes/login";
 import Map from "./routes/map";
 import Detail from "./routes/detial";
-import loader from "./routes/detial";
 
 export default function App() {
   return (
