@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { geoCentroid } from "d3-geo";
 import {
   ComposableMap,
@@ -11,6 +11,12 @@ import {
 import allStates from "../assets/data/allstates.json";
 
 import { Link, redirect } from "react-router-dom";
+
+import diseasedata from "../assets/data/diseasedata.json";
+
+import Box from '@mui/material/Box';
+
+// const fs = require('fs');
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -26,8 +32,13 @@ const offsets = {
   DC: [49, 21]
 };
 
+
 // 这里有个bug 在点击每个州的时候 会出现黑框 而且还是在不同图层上
-const MapChart = () => {
+const MapChart = (props: { onMessage: (arg0: string) => void; }) => {
+
+
+
+
     const handleMapClick = (event: { stopPropagation: () => void; }) => {
         event.stopPropagation();
         // alert("geo.id")
@@ -35,8 +46,24 @@ const MapChart = () => {
       const [hoveredId, setHoveredId] = useState(null);
       const [fillColors, setFillColors] = useState({});
       const [geographyStates, setGeographyStates] = useState({});
-  return (
+  
+          // 回传信息
+    const [message, setMessage] = useState('');
+
+    const handleMessage = () => {
+      props.onMessage(hoveredId);
+      console.log("message: " + hoveredId);
+      console.log(fillColors);
+    };
+
+    useEffect(() => {
+      console.log('Component updated!');
+      handleMessage();
+    }, [hoveredId, props]);
+    
+      return (
     <ComposableMap projection="geoAlbersUsa" onClick={handleMapClick}>
+
         {/* {hoveredId && (
           <div >
             {hoveredId}
@@ -60,23 +87,27 @@ const MapChart = () => {
                 // onClick={handleMapClick}
                 onClick={(event) => {
                     console.log(`/detail/${geo.id}`);
-                    // console.log(geo.name);
+
+
                   }}
 
                   onMouseEnter={() => {
                     setHoveredId(geo.id);
                     console.log("hover: " + geo.id);
-                    
+
+                    // setMessage(geo.id);
+                    handleMessage();
 
                     setFillColors({[geo.id]: "#555" });
                     // setFillColors({ ...fillColors, [geo.id]: "#555" });
                     
-                    console.log(fillColors);
+                    // console.log(fillColors);
 
                   }}
                   // onMouseLeave={() => {
-                  //   console.log("leave: " + geo.id);
+                  //   // console.log("leave: " + geo.id);
                   //   setHoveredId(null);
+                  //   handleMessage();
                   // }}
               />
               </Link>
@@ -103,7 +134,8 @@ const MapChart = () => {
                         connectorProps={{}}
                       >
                         <text x={4} fontSize={14} alignmentBaseline="middle">
-                          {cur.id}
+                          {cur.id}:{geo.id}
+                          
                         </text>
                       </Annotation>
                     ))}
@@ -114,6 +146,7 @@ const MapChart = () => {
         )}
       </Geographies>
     </ComposableMap>
+    // </Box>
   );
 };
 

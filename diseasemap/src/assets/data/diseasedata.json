@@ -1,0 +1,326 @@
+{
+    "AL": {
+        "name": "Alabama",
+        "abbreviation": "AL",
+        "commonDisease": "Tuberculosis",
+        "id": 1
+    },
+    "AK": {
+        "name": "Alaska",
+        "abbreviation": "AK",
+        "commonDisease": "Hepatitis A",
+        "id": 2
+    },
+    "AZ": {
+        "name": "Arizona",
+        "abbreviation": "AZ",
+        "commonDisease": "Valley Fever",
+        "id": 4
+    },
+    "AR": {
+        "name": "Arkansas",
+        "abbreviation": "AR",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 5
+    },
+    "CA": {
+        "name": "California",
+        "abbreviation": "CA",
+        "commonDisease": "West Nile Virus",
+        "id": 6
+    },
+    "CO": {
+        "name": "Colorado",
+        "abbreviation": "CO",
+        "commonDisease": "Tularemia",
+        "id": 8
+    },
+    "CT": {
+        "name": "Connecticut",
+        "abbreviation": "CT",
+        "commonDisease": "Lyme Disease",
+        "id": 9
+    },
+    "DE": {
+        "name": "Delaware",
+        "abbreviation": "DE",
+        "commonDisease": "Lyme Disease",
+        "id": 10
+    },
+    "FL": {
+        "name": "Florida",
+        "abbreviation": "FL",
+        "commonDisease": "Dengue Fever",
+        "id": 12
+    },
+    "GA": {
+        "name": "Georgia",
+        "abbreviation": "GA",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 1310
+    },
+    "HI": {
+        "name": "Hawaii",
+        "abbreviation": "HI",
+        "commonDisease": "Leptospirosis",
+        "id": 15
+    },
+    "ID": {
+        "name": "Idaho",
+        "abbreviation": "ID",
+        "commonDisease": "Plague",
+        "id": 16
+    },
+    "IL": {
+        "name": "Illinois",
+        "abbreviation": "IL",
+        "commonDisease": "West Nile Virus",
+        "id": 17
+    },
+    "IN": {
+        "name": "Indiana",
+        "abbreviation": "IN",
+        "commonDisease": "Lyme Disease",
+        "id": 18
+    },
+    "IA": {
+        "name": "Iowa",
+        "abbreviation": "IA",
+        "commonDisease": "Lyme Disease",
+        "id": 19
+    },
+    "KS": {
+        "name": "Kansas",
+        "abbreviation": "KS",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 20
+    },
+    "KY": {
+        "name": "Kentucky",
+        "abbreviation": "KY",
+        "commonDisease": "Lyme Disease",
+        "id": 21
+    },
+    "LA": {
+        "name": "Louisiana",
+        "abbreviation": "LA",
+        "commonDisease": "West Nile Virus",
+        "id": 22
+    },
+    "ME": {
+        "name": "Maine",
+        "abbreviation": "ME",
+        "commonDisease": "Lyme Disease",
+        "id": 23
+    },
+    "MD": {
+        "name": "Maryland",
+        "abbreviation": "MD",
+        "commonDisease": "Lyme Disease",
+        "id": 24
+    },
+    "MA": {
+        "name": "Massachusetts",
+        "abbreviation": "MA",
+        "commonDisease": "Lyme Disease",
+        "id": 25
+    },
+    "MI": {
+        "name": "Michigan",
+        "abbreviation": "MI",
+        "commonDisease": "Lyme Disease",
+        "id": 26
+    },
+    "MN": {
+        "name": "Minnesota",
+        "abbreviation": "MN",
+        "commonDisease": "Lyme Disease",
+        "id": 27
+    },
+    "MS": {
+        "name": "Mississippi",
+        "abbreviation": "MS",
+        "commonDisease": "Hepatitis C",
+        "id": 28
+    },
+    "MO": {
+        "name": "Missouri",
+        "abbreviation": "MO",
+        "commonDisease": "Lyme Disease",
+        "id": 29
+    },
+    "MT": {
+        "name": "Montana",
+        "abbreviation": "MT",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 30
+    },
+    "NE": {
+        "name": "Nebraska",
+        "abbreviation": "NE",
+        "commonDisease": "West Nile Virus",
+        "id": 31
+    },
+    "NV": {
+        "name": "Nevada",
+        "abbreviation": "NV",
+        "commonDisease": "Lyme Disease",
+        "id": 32
+    },
+    "NH": {
+        "name": "New Hampshire",
+        "abbreviation": "NH",
+        "commonDisease": "Lyme Disease",
+        "id": 33
+    },
+    "NJ": {
+        "name": "New Jersey",
+        "abbreviation": "NJ",
+        "commonDisease": "Lyme Disease",
+        "id": 34
+    },
+    "NM": {
+        "name": "New Mexico",
+        "abbreviation": "NM",
+        "commonDisease": "Hantavirus",
+        "id": 35
+    },
+    "NY": {
+        "name": "New York",
+        "abbreviation": "NY",
+        "commonDisease": "Lyme Disease",
+        "id": 36
+    },
+    "NC": {
+        "name": "North Carolina",
+        "abbreviation": "NC",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 37
+    },
+    "ND": {
+        "name": "North Dakota",
+        "abbreviation": "ND",
+        "commonDisease": "West Nile Virus",
+        "id": 38
+    },
+    "OH": {
+        "name": "Ohio",
+        "abbreviation": "OH",
+        "commonDisease": "Lyme Disease",
+        "id": 39
+    },
+    "OK": {
+        "name": "Oklahoma",
+        "abbreviation": "OK",
+        "commonDisease": "West Nile Virus",
+        "id": 40
+    },
+    "OR": {
+        "name": "Oregon",
+        "abbreviation": "OR",
+        "commonDisease": "Lyme Disease",
+        "id": 41
+    },
+    "PA": {
+        "name": "Pennsylvania",
+        "abbreviation": "PA",
+        "commonDisease": "Lyme Disease",
+        "id": 42
+    },
+    "RI": {
+        "name": "Rhode Island",
+        "abbreviation": "RI",
+        "commonDisease": "Lyme Disease",
+        "id": 44
+    },
+    "SC": {
+        "name": "South Carolina",
+        "abbreviation": "SC",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 45
+    },
+    "SD": {
+        "name": "South Dakota",
+        "abbreviation": "SD",
+        "commonDisease": "West Nile Virus",
+        "id": 46
+    },
+    "TN": {
+        "name": "Tennessee",
+        "abbreviation": "TN",
+        "commonDisease": "Lyme Disease",
+        "id": 47
+    },
+    "TX": {
+        "name": "Texas",
+        "abbreviation": "TX",
+        "commonDisease": "Lyme Disease",
+        "id": 48
+    },
+    "UT": {
+        "name": "Utah",
+        "abbreviation": "UT",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 49
+    },
+    "VT": {
+        "name": "Vermont",
+        "abbreviation": "VT",
+        "commonDisease": "Lyme Disease",
+        "id": 50
+    },
+    "VA": {
+        "name": "Virginia",
+        "abbreviation": "VA",
+        "commonDisease": "Lyme Disease",
+        "id": 51
+    },
+    "WA": {
+        "name": "Washington",
+        "abbreviation": "WA",
+        "commonDisease": "Hepatitis C",
+        "id": 53
+    },
+    "WV": {
+        "name": "West Virginia",
+        "abbreviation": "WV",
+        "commonDisease": "Lyme Disease",
+        "id": 54
+    },
+    "WI": {
+        "name": "Wisconsin",
+        "abbreviation": "WI",
+        "commonDisease": "Lyme Disease",
+        "id": 55
+    },
+    "WY": {
+        "name": "Wyoming",
+        "abbreviation": "WY",
+        "commonDisease": "Hepatitis C",
+        "id": 56
+    },
+    "GU": {
+        "name": "Guam",
+        "abbreviation": "GU",
+        "commonDisease": "Lyme Disease",
+        "id": 66
+    },
+    "MP": {
+        "name": "Northern Mariana Islands",
+        "abbreviation": "MP",
+        "commonDisease": "Lyme Disease",
+        "id": 69
+    },
+    "PR": {
+        "name": "Puerto Rico",
+        "abbreviation": "PR",
+        "commonDisease": "Lyme Disease",
+        "id": 72
+    },
+    "VI": {
+        "name": "Virgin Islands",
+        "abbreviation": "VI",
+        "commonDisease": "Lyme Disease",
+        "id": 78
+    }
+}
