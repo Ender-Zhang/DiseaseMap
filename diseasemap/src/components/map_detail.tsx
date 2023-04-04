@@ -1,3 +1,11 @@
+/*
+ * @Author: Ender-Zhang 102596313+Ender-Zhang@users.noreply.github.com
+ * @Date: 2023-04-03 20:57:55
+ * @LastEditors: Ender-Zhang 102596313+Ender-Zhang@users.noreply.github.com
+ * @LastEditTime: 2023-04-03 22:40:18
+ * @FilePath: \DiseaseMap\diseasemap\src\components\map_detail.tsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import { css } from '@emotion/css';
 import { Copyright } from '@mui/icons-material';
 import { Button, Container, Box } from '@mui/material';
@@ -19,7 +27,6 @@ export default function Map_detail() {
   return (
     <div>
       {/* <Header /> */}
-      <p>This is test Page</p>
       <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <h1>This is Map Page</h1>
             <p>Message from child component: {message}</p>
@@ -32,7 +39,7 @@ export default function Map_detail() {
               setDiseasedata("456");
               setTimer(timer+1);
             }}>d2</Button>
-            <Box style={{width:"50%"}}>
+            <Box style={{width:"70%"}}>
             <MapChart onMessage={handleMessage} name={diseasedata} t={timer}/>
             </Box>
             <Copyright sx={{ pt: 4 }} />
