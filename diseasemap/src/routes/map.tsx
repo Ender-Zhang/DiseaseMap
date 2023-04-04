@@ -1,8 +1,8 @@
 /*
  * @Author: Ender-Zhang 102596313+Ender-Zhang@users.noreply.github.com
  * @Date: 2023-03-30 17:30:40
- * @LastEditors: Ender-Zhang 102596313+Ender-Zhang@users.noreply.github.com
- * @LastEditTime: 2023-04-03 01:31:01
+ * @LastEditors: Ender-Zhang YUZ302@pitt.edu
+ * @LastEditTime: 2023-04-03 20:00:09
  * @FilePath: \DiseaseMap\diseasemap\src\routes\map.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -33,7 +33,7 @@ import { mainListItems } from '../components/listItems';
 import MapChart from '../components/mapComponent';
 import { useState } from 'react';
 import Brief_info from '../components/brief_info';
-
+import Map_detail from '../components/map_detail';
 
 function Copyright(props: any) {
   return (
@@ -101,7 +101,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 const mdTheme = createTheme();
 
 function DashboardContent() {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const toggleDrawer = () => {
     setOpen(!open);
   };
@@ -183,13 +183,16 @@ function DashboardContent() {
         >
           <Toolbar />
           {/* Here is Map */}
-          <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+          {/* <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <h1>This is Map Page</h1>
             <p>Message from child component: {message}</p>
             <Brief_info id={message}/>
-            <MapChart onMessage={handleMessage}/>
+            <view style={{width:"50%"}}>
+            <MapChart onMessage={handleMessage} />
+            </view>
             <Copyright sx={{ pt: 4 }} />
-          </Container>
+          </Container> */}
+          <Map_detail />
         </Box>
       </Box>
     </ThemeProvider>
