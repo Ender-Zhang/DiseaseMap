@@ -18,14 +18,22 @@ import { Link } from "react-router-dom";
 
 const theme = createTheme();
 
+
+
 export default function LoginComponent() {
+  const [username, setUsername] = React.useState("");
+  const [password, setPassword] = React.useState("");
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    console.log("Login")
     console.log({
       email: data.get('email'),
       password: data.get('password'),
     });
+    setUsername(data.get('email') as string);
+    setPassword(data.get('password') as string);
   };
 
   return (
@@ -75,6 +83,7 @@ export default function LoginComponent() {
               label="Remember me"
             />
             <Link to="/map">
+            {/* <Link to={"/map/"+username+"ZYC"+password} key={username}> */}
             <Button
               type="submit"
               fullWidth

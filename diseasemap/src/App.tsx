@@ -6,6 +6,7 @@ import Test from "./routes/test";
 import Login from "./routes/login";
 import Map from "./routes/map";
 import Detail from "./routes/detial";
+import User_info from "./routes/user_info";
 
 export default function App() {
   return (
@@ -14,8 +15,9 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Login />} />
           <Route path="test" element={<Test />} />
-          <Route path="map" element={<Map />} />
+          <Route path="map/:id" element={<Map />} />
           <Route path="detail/:id" element={<Detail />} />
+          <Route path="userinfo/:id" element={<User_info />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
