@@ -16,17 +16,22 @@
     "@mui/material": "^5.11.15",
     "@mui/styled-engine-sc": "^5.11.11",
     "@types/antd": "^1.0.0",
+    "@types/react-slick": "^0.23.10",
+    "@types/yup": "^0.32.0",
     "antd": "^5.3.3",
     "d3": "^7.8.3",
+    "formik": "^2.2.9",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "react-simple-maps": "^3.0.0",
+    "react-slick": "^0.29.0",
     "sort-by": "^1.2.0",
     "styled-components": "^5.3.9",
-    "topojson-client": "^3.1.0"
+    "topojson-client": "^3.1.0",
+    "yup": "^1.0.2"
   },
   "devDependencies": {
     "@types/d3": "^7.4.0",

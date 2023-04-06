@@ -13,16 +13,35 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 const theme = createTheme();
 
 
 
-export default function LoginComponent() {
+export default function LoginComponent(props: any) {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
+
+  let auth = props.auth;
+  console.log("component Auth: ", auth);
+
+  // 定义authcontext
+  interface AuthContextType {
+    user: any;
+    signin: (user: string, callback: VoidFunction) => void;
+    signout: (callback: VoidFunction) => void;
+  }
+  let AuthContext = React.createContext<AuthContextType>(null!);
+  function useAuth() {
+    return React.useContext(AuthContext);
+  }
+
+  let navigate = useNavigate();
+  let location = useLocation();
+  // let auth = useAuth();
+  let from = location.state?.from?.pathname || "/";
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -34,7 +53,28 @@ export default function LoginComponent() {
     });
     setUsername(data.get('email') as string);
     setPassword(data.get('password') as string);
+
+    // 登录授权
+    event.preventDefault();
+
+    let formData = new FormData(event.currentTarget);
+    let username = formData.get("email") as string;
+
+    console.log("Username: " + username);
+    console.log("from: " + from);
+    auth.signin(username, () => {
+      // Send them back to the page they tried to visit when they were
+      // redirected to the login page. Use { replace: true } so we don't create
+      // another entry in the history stack for the login page.  This means that
+      // when they get to the protected page and click the back button, they
+      // won't end up back on the login page, which is also really nice for the
+      // user experience.
+      navigate("/map", { replace: true });
+    });
   };
+
+  
+
 
   return (
     <ThemeProvider theme={theme}>
@@ -82,7 +122,7 @@ export default function LoginComponent() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-            <Link to="/map">
+            {/* <Link to="/map"> */}
             {/* <Link to={"/map/"+username+"ZYC"+password} key={username}> */}
             <Button
               type="submit"
@@ -92,7 +132,7 @@ export default function LoginComponent() {
             >
               Sign In
             </Button>
-            </Link>
+            {/* </Link> */}
             <Grid container>
               <Grid item xs>
                 <Button>
