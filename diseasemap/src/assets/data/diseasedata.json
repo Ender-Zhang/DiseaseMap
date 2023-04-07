@@ -1,0 +1,385 @@
+{
+    "AL": {
+        "name": "Alabama",
+        "abbreviation": "AL",
+        "commonDisease": "Tuberculosis",
+        "id": 1,
+        "description": "Alabama, located in the southeastern U.S., is known for its rich history, beautiful landscapes, and a strong college football culture."
+    },
+    "AK": {
+        "name": "Alaska",
+        "abbreviation": "AK",
+        "commonDisease": "Hepatitis A",
+        "id": 2,
+        "description": "Alaska is the largest U.S. state by area, known for its stunning wilderness, diverse wildlife, and extreme weather conditions."
+    },
+    "AZ": {
+        "name": "Arizona",
+        "abbreviation": "AZ",
+        "commonDisease": "Valley Fever",
+        "id": 4,
+        "description": "Arizona is known for its desert landscapes, Native American heritage, the iconic Grand Canyon, and vibrant cities like Phoenix and Tucson."
+    },
+    "AR": {
+        "name": "Arkansas",
+        "abbreviation": "AR",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 5,
+        "description": "Arkansas, located in the southern U.S., is known for its diverse natural beauty, including rivers, hot springs, forests, and the Ozark Mountains."
+    },
+    "CA": {
+        "name": "California",
+        "abbreviation": "CA",
+        "commonDisease": "West Nile Virus",
+        "id": 6,
+        "description": "California, the most populous U.S. state, is known for its diverse geography, technology industry, Hollywood, and beautiful coastlines."
+    },
+    "CO": {
+        "name": "Colorado",
+        "abbreviation": "CO",
+        "commonDisease": "Tularemia",
+        "id": 8,
+        "description": "Colorado is renowned for its stunning Rocky Mountains, outdoor recreation opportunities, and vibrant cities like Denver and Boulder."
+    },
+    "CT": {
+        "name": "Connecticut",
+        "abbreviation": "CT",
+        "commonDisease": "Lyme Disease",
+        "id": 9,
+        "description": "Connecticut, part of the northeastern U.S., is known for its charming small towns, historic sites, and prestigious universities like Yale."
+    },
+    "DE": {
+        "name": "Delaware",
+        "abbreviation": "DE",
+        "commonDisease": "Lyme Disease",
+        "id": 10,
+        "description": "Delaware, the second smallest U.S. state, is known for its beautiful beaches, historical landmarks, and a favorable business climate."
+    },
+    "FL": {
+        "name": "Florida",
+        "abbreviation": "FL",
+        "commonDisease": "Dengue Fever",
+        "id": 12,
+        "description": "Florida, the Sunshine State, is famous for its warm weather, beautiful beaches, theme parks, and diverse wildlife like alligators and manatees."
+    },
+    "GA": {
+        "name": "Georgia",
+        "abbreviation": "GA",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 1310,
+        "description": "Georgia, located in the southeastern U.S., is known for its rich history,peach production, and bustling cities like Atlanta, Savannah, and Athens."
+    },
+    "HI": {
+        "name": "Hawaii",
+        "abbreviation": "HI",
+        "commonDisease": "Leptospirosis",
+        "id": 15,
+        "description": "Hawaii, a U.S. state composed of volcanic islands, is known for its tropical climate, breathtaking landscapes, diverse culture, and surfing."
+    },
+    "ID": {
+        "name": "Idaho",
+        "abbreviation": "ID",
+        "commonDisease": "Plague",
+        "id": 16,
+        "description": "Idaho is famous for its picturesque landscapes, including mountains, forests, and rivers, as well as its rich agriculture and outdoor recreation."
+    },
+    "IL": {
+        "name": "Illinois",
+        "abbreviation": "IL",
+        "commonDisease": "West Nile Virus",
+        "id": 17,
+        "description": "Illinois, a midwestern state, is known for its diverse economy, rich history, and major city, Chicago, which is a global hub for commerce and culture."
+    },
+    "IN": {
+        "name": "Indiana",
+        "abbreviation": "IN",
+        "commonDisease": "Lyme Disease",
+        "id": 18,
+        "description": "Indiana, a midwestern state, is known for its manufacturing industry, agriculture, and sports events like the Indianapolis 500 car race."
+    },
+    "IA": {
+        "name": "Iowa",
+        "abbreviation": "IA",
+        "commonDisease": "Lyme Disease",
+        "id": 19,
+        "description": "Iowa, situated in the Midwest, is known for its fertile farmland, rolling hills, and important role in the U.S. presidential election process."
+    },
+    "KS": {
+        "name": "Kansas",
+        "abbreviation": "KS",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 20,
+        "description": "Kansas, located in the Great Plains, is known for its agriculture, flat landscapes, and significant contributions to U.S. history, including the fight against slavery."
+    },
+    "KY": {
+        "name": "Kentucky",
+        "abbreviation": "KY",
+        "commonDisease": "Lyme Disease",
+        "id": 21,
+        "description": "Kentucky, known for its bluegrass landscapes, is famous for horse racing, bourbon distilleries, and the birthplace of bluegrass music."
+    },
+    "LA": {
+        "name": "Louisiana",
+        "abbreviation": "LA",
+        "commonDisease": "West Nile Virus",
+        "id": 22,
+        "description": "Louisiana, located in the southeastern U.S., is known for its rich cultural heritage, unique cuisine, and vibrant music scene, especially in New Orleans."
+    },
+    "ME": {
+        "name": "Maine",
+        "abbreviation": "ME",
+        "commonDisease": "Lyme Disease",
+        "id": 23,
+        "description": "Maine, the northeasternmost U.S. state, is known for its rugged coastlines, quaint fishing villages, lighthouses, and delicious seafood like lobster."
+    },
+    "MD": {
+        "name": "Maryland",
+        "abbreviation": "MD",
+        "commonDisease": "Lyme Disease",
+        "id": 24,
+        "description": "Maryland, a Mid-Atlantic state, is known for its diverse terrain, rich history, and the major city of Baltimore, which is a major cultural and economic center."
+    },
+    "MA": {
+        "name": "Massachusetts",
+        "abbreviation": "MA",
+        "commonDisease": "Lyme Disease",
+        "id": 25,
+        "description": "Massachusetts, located in the northeastern U.S., is known for its rich history, top-tier universities like Harvard and MIT, and vibrant cities like Boston."
+    },
+    "MI": {
+        "name": "Michigan",
+        "abbreviation": "MI",
+        "commonDisease": "Lyme Disease",
+        "id": 26,
+        "description": "Michigan, located in the Great Lakes region, is known for its automotive industry, beautiful lakes and beaches, and the major city of Detroit."
+    },
+    "MN": {
+        "name": "Minnesota",
+        "abbreviation": "MN",
+        "commonDisease": "Lyme Disease",
+        "id": 27,
+        "description": "Minnesota, known as the 'Land of 10,000 Lakes,' is famous for its picturesque landscapes, outdoor recreation, and the vibrant city of Minneapolis."
+    },
+    "MS": {
+        "name": "Mississippi",
+        "abbreviation": "MS",
+        "commonDisease": "West Nile Virus",
+        "id": 28,
+        "description": "Mississippi, located in the Deep South, is known for its rich history, civil rights landmarks, and the birthplace of the blues music genre."
+    },
+    "MO": {
+        "name": "Missouri",
+        "abbreviation": "MO",
+        "commonDisease": "Tularemia",
+        "id": 29,
+        "description": "Missouri, situated in the Midwest, is known for its diverse geography, rivers, and major cities like St. Louis and Kansas City."
+    },
+    "MT": {
+        "name": "Montana",
+        "abbreviation": "MT",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 30,
+        "description": "Montana, known as 'Big Sky Country,' is famous for its stunning landscapes, national parks like Glacier and Yellowstone, and outdoor recreation."
+    },
+    "NE": {
+        "name": "Nebraska",
+        "abbreviation": "NE",
+        "commonDisease": "Lyme Disease",
+        "id": 31,
+        "description": "Nebraska, located in the Great Plains, is known for its agriculture, prairies, and significant contributions to American history, such as the Oregon Trail."
+    },
+    "NV": {
+        "name": "Nevada",
+        "abbreviation": "NV",
+        "commonDisease": "Hantavirus",
+        "id": 32,
+        "description": "Nevada, a western U.S. state, is famous for its desert landscapes, 24-hour entertainment in cities like Las Vegas, and the striking beauty of Lake Tahoe."
+    },
+    "NH": {
+        "name": "New Hampshire",
+        "abbreviation": "NH",
+        "commonDisease": "Lyme Disease",
+        "id": 33,
+        "description": "New Hampshire, located in the northeastern U.S., is known for its picturesque landscapes, quaint towns, and a strong sense of political independence."
+    },
+    "NJ": {
+        "name": "New Jersey",
+        "abbreviation": "NJ",
+        "commonDisease": "Lyme Disease",
+        "id": 34,
+        "description": "New Jersey, situated in the Mid-Atlantic region, is known for its diverse population, Atlantic City, and close proximity to major cities like New York City and Philadelphia."
+    },
+    "NM": {
+        "name": "New Mexico",
+        "abbreviation": "NM",
+        "commonDisease": "Hantavirus",
+        "id": 35,
+        "description": "New Mexico, located in the southwestern U.S., is known for its vibrant arts scene, Native American culture, and stunning desert landscapes, including White Sands National Park."
+    },
+    "NY": {
+        "name": "New York",
+        "abbreviation": "NY",
+        "commonDisease": "Lyme Disease",
+        "id": 36,
+        "description": "New York, located in the northeastern U.S., is known for its bustling metropolis of New York City, rich history, and natural beauty, including Niagara Falls."
+    },
+    "NC": {
+        "name": "North Carolina",
+        "abbreviation": "NC",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 37,
+        "description": "North Carolina, situated in the southeastern U.S., is known for its diverse geography, ranging from the Appalachian Mountains to the Atlantic coast, and its Research Triangle Park."
+    },
+    "ND": {
+        "name": "North Dakota",
+        "abbreviation": "ND",
+        "commonDisease": "Lyme Disease",
+        "id": 38,
+        "description": "North Dakota, located in the Great Plains, is known for its agriculture, rich history, and stunning natural attractions, such as Theodore Roosevelt National Park."
+    },
+    "OH": {
+        "name": "Ohio",
+        "abbreviation": "OH",
+        "commonDisease": "Lyme Disease",
+        "id": 39,
+        "description": "Ohio, a midwestern state, is known for its industrial history, sports teams, and major cities like Cleveland, Cincinnati, and Columbus."
+    },
+    "OK": {
+        "name": "Oklahoma",
+        "abbreviation": "OK",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 40,
+        "description": "Oklahoma, located in the south-central U.S., is known for its Native American heritage, diverse landscapes, and the historic Route 66."
+    },
+    "OR": {
+        "name": "Oregon",
+        "abbreviation": "OR",
+        "commonDisease": "Lyme Disease",
+        "id": 41,
+        "description": "Oregon, situated in the Pacific Northwest, is known for its stunning coastlines, lush forests, and vibrant cities like Portland."
+    },
+    "PA": {
+        "name": "Pennsylvania",
+        "abbreviation": "PA",
+        "commonDisease": "Lyme Disease",
+        "id": 42,
+        "description": "Pennsylvania, located in the northeastern U.S., is known for its rich history, including sites like Independence Hall, and major cities like Philadelphia and Pittsburgh."
+    },
+    "RI": {
+        "name": "Rhode Island",
+        "abbreviation": "RI",
+        "commonDisease": "Lyme Disease",
+        "id": 44,
+        "description": "Rhode Island, the smallest U.S. state, is known for its beautiful coastline, historic sites, and the city of Providence, which is home to the prestigious Brown University."
+    },
+    "SC": {
+        "name": "South Carolina",
+        "abbreviation": "SC",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 45,
+        "description": "South Carolina, located in the southeastern U.S., is known for its charming cities, such as Charleston, and its beautiful beaches, including Myrtle Beach and Hilton Head Island."
+    },
+    "SD": {
+        "name": "South Dakota",
+        "abbreviation": "SD",
+        "commonDisease": "West Nile Virus",
+        "id": 46,
+        "description": "South Dakota, situated in the Great Plains, is known for its picturesque landscapes, including the Badlands and Black Hills, and the iconic Mount Rushmore National Memorial."
+    },
+    "TN": {
+        "name": "Tennessee",
+        "abbreviation": "TN",
+        "commonDisease": "Rocky Mountain Spotted Fever",
+        "id": 47,
+        "description": "Tennessee, located in the southeastern U.S., is known for its rich musical heritage, including country, blues, and rock 'n' roll, as well as major cities like Nashville and Memphis."
+    },
+    "TX": {
+        "name": "Texas",
+        "abbreviation": "TX",
+        "commonDisease": "West Nile Virus",
+        "id": 48,
+        "description": "Texas, the second-largest U.S. state, is known for its diverse landscapes, rich history, and major cities like Austin, Houston, and San Antonio."
+    },
+    "UT": {
+        "name": "Utah",
+        "abbreviation": "UT",
+        "commonDisease": "Hantavirus",
+        "id": 49,
+        "description": "Utah, located in the western U.S., is known for its stunning red rock formations, national parks like Zion and Arches, and the city of Salt Lake City."
+    },
+    "VT": {
+        "name": "Vermont",
+        "abbreviation": "VT",
+        "commonDisease": "Lyme Disease",
+        "id": 50,
+        "description": "Vermont, situated in the northeastern U.S., is known for its picturesque landscapes, maple syrup production, and the city of Burlington."
+    },
+    "VA": {
+        "name": "Virginia",
+        "abbreviation": "VA",
+        "commonDisease": "Lyme Disease",
+        "id": 51,
+        "description": "Virginia, located in the southeastern U.S., is known for its rich history, including early colonial settlements and important Civil War sites, as well as its picturesque landscapes."
+    },
+    "WA": {
+        "name": "Washington",
+        "abbreviation": "WA",
+        "commonDisease": "Lyme Disease",
+        "id": 53,
+        "description": "Washington, situated in the Pacific Northwest, is known for its lush forests, stunning coastlines, and the vibrant city of Seattle, which is a hub for technology and culture."
+    },
+    "WV": {
+        "name": "West Virginia",
+        "abbreviation": "WV",
+        "commonDisease": "Lyme Disease",
+        "id": 54,
+        "description": "West Virginia, located in the Appalachian region, is known for its stunning mountain landscapes, outdoor recreation, and rich history in coal mining and logging."
+    },
+    "WI": {
+        "name": "Wisconsin",
+        "abbreviation": "WI",
+        "commonDisease": "Lyme Disease",
+        "id": 55,
+        "description": "Wisconsin, a midwestern state, is known for its picturesque landscapes, including forests and lakes, as well as its cheese production and major cities like Milwaukee and Madison."
+    },
+    "WY": {
+        "name": "Wyoming",
+        "abbreviation": "WY",
+        "commonDisease": "West Nile Virus",
+        "id": 56,
+        "description": "Wyoming, located in the western U.S., is known for its stunning landscapes, including the Grand Tetons and Yellowstone National Park, as well as its wide-open spaces and outdoor recreation opportunities."
+    },
+    "GU": {
+        "name": "Guam",
+        "abbreviation": "GU",
+        "commonDisease": "Lyme Disease",
+        "id": 66,
+        "description": "Guam, a U.S. territory in the Pacific, offers beautiful beaches, rich Chamorro culture, and a mix of Spanish, American, and Asian influences."
+    },
+    "MP": {
+        "name": "Northern Mariana Islands",
+        "abbreviation": "MP",
+        "commonDisease": "Lyme Disease",
+        "id": 69,
+        "description": "The Northern Mariana Islands, a U.S. territory in the Pacific, are known for their pristine beaches, lush landscapes, and unique blend of cultures."
+    },
+    "PR": {
+        "name": "Puerto Rico",
+        "abbreviation": "PR",
+        "commonDisease": "Lyme Disease",
+        "id": 72,
+        "description": "Puerto Rico, a U.S. territory in the Caribbean, boasts beautiful beaches, a vibrant culture, and historic sites such as Old San Juan."
+    },
+    "VI": {
+        "name": "Virgin Islands",
+        "abbreviation": "VI",
+        "commonDisease": "Lyme Disease",
+        "id": 78,
+        "description": "The U.S. Virgin Islands, a Caribbean territory, offer stunning beaches, crystal-clear waters, and a rich cultural heritage influenced by various nations."
+    }
+}
+    
+    
+    
+    
+    
