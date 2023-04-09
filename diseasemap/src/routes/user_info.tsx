@@ -4,7 +4,7 @@ import { Button, Container, Box, Grid, Card, CardContent, Typography, Divider } 
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import userdata from "../assets/data/userdata.json"
-import Avatar from 'avataaars';
+// import Avatar from 'avataaars';
 
 
   const User_info = () => {
@@ -34,7 +34,7 @@ import Avatar from 'avataaars';
                   <Grid item>
                     {/* <Avatar sx={{ width: 80, height: 80 }} />
                      */}
-                     <Avatar
+                     {/* <Avatar
                         avatarStyle='Circle'
                         topType='WinterHat2'
                         accessoriesType='Sunglasses'
@@ -45,7 +45,7 @@ import Avatar from 'avataaars';
                         eyebrowType='UpDownNatural'
                         mouthType='Vomit'
                         skinColor='Light'
-                        />
+                        /> */}
                   </Grid>
                   <Grid item xs={12} sm container>
                     <Grid item xs container direction="column" spacing={2}>

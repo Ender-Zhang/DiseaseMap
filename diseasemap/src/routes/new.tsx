@@ -174,13 +174,13 @@ const NewsItem = ({ news }: { news: NewsData }) => (
 
 const NewsList = () => {
 
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
+  // useEffect(() => {
+  //   document.body.style.overflow = 'hidden';
 
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
+  //   return () => {
+  //     document.body.style.overflow = 'auto';
+  //   };
+  // }, []);
   const [page, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const totalPages = Math.ceil(newsData.length / ITEMS_PER_PAGE);
