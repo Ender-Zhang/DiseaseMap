@@ -181,6 +181,9 @@ function LoginPage() {
     let formData = new FormData(event.currentTarget);
     let username = formData.get("username") as string;
     console.log("auth: ", auth);
+    if (username === "12345") {
+      alert("Please enter a username");
+    }
     auth.signin(username, () => {
       // Send them back to the page they tried to visit when they were
       // redirected to the login page. Use { replace: true } so we don't create

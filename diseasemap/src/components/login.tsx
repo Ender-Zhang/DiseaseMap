@@ -59,18 +59,56 @@ export default function LoginComponent(props: any) {
 
     let formData = new FormData(event.currentTarget);
     let username = formData.get("email") as string;
+    let password = formData.get("password") as string;
 
     console.log("Username: " + username);
     console.log("from: " + from);
-    auth.signin(username, () => {
-      // Send them back to the page they tried to visit when they were
-      // redirected to the login page. Use { replace: true } so we don't create
-      // another entry in the history stack for the login page.  This means that
-      // when they get to the protected page and click the back button, they
-      // won't end up back on the login page, which is also really nice for the
-      // user experience.
-      navigate("/map", { replace: true });
-    });
+
+    const requestOptions: RequestInit = {
+      method: 'GET',
+      redirect: 'follow',
+    };
+    
+  //   var result1 = false;
+  //   const url = "http://localhost:8080/isAdmin?id=" + username + "&password=" + password;
+  //   fetch(url, requestOptions)
+  //     .then(response => response.text())
+  //     .then(result => {console.log(result);
+  //     result1 = true;
+  // })
+  //     .catch(error => console.log('error', error));
+
+  //   if (result1 === true) {
+  //     auth.signin(username, () => {
+  //       // Send them back to the page they tried to visit when they were
+  //       // redirected to the login page. Use { replace: true } so we don't create
+  //       // another entry in the history stack for the login page.  This means that
+  //       // when they get to the protected page and click the back button, they
+  //       // won't end up back on the login page, which is also really nice for the
+  //       // user experience.
+  //       navigate("/map", { replace: true });
+  //     });
+  //   }
+  //   else {
+  //     alert("Wrong username or password!");
+  //   }
+
+  var result1;
+  const url = "http://localhost:8080/isAdmin?id=" + username + "&password=" + password;
+  fetch(url, requestOptions)
+    .then(response => response.text())
+    .then(result => {
+      console.log("Login success");
+      result1 = result;
+      if (result1 === "true") {
+        auth.signin(username, () => {
+          navigate("/map", { replace: true });
+        });
+      } else {
+        alert("Wrong username or password!");
+      }
+    })
+    .catch(error => console.log('error', error));
   };
 
   
