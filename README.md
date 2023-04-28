@@ -4,17 +4,17 @@ Run
 
 Vite + React + TS
 
-react router 用来导航
+The react router is used to navigate
 
 l[reactrouter doc](https://reactrouter.com/en/main/start/tutorial)
 
-MUI用来设计UI
+MUI is used to design UI
 
 [MUI Doc](https://mui.com/material-ui/getting-started/templates/)
 
-UI库里有模板 可以参考下
+There are templates in the UI library that you can refer to
 
-启动
+Start
 
 `cd diseasemap`
 
